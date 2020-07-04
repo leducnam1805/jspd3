@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Random</title>
+</head>
+<body>
+	<h1 style="color: red">Kiểm tra số Random</h1>
+	<%
+	int number = (int) request.getAttribute("number");
+	if(number!=""){
+		out.print(number);
+	}else{
+		out.print("CMM");
+	}
+	
+	%>
+</body>
+</html>

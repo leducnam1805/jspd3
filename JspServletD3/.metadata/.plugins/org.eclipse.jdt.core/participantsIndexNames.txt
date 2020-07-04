@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+E:\java\19_JSP_SERVLETD3\baitap\JspServletD3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3988633977.index
+\baiTap\src
+E:\java\19_JSP_SERVLETD3\baitap\JspServletD3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1943612634.index
+\baiTap\src
+E:\java\19_JSP_SERVLETD3\baitap\JspServletD3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\81665100.index
+\baiTap\src
+E:\java\19_JSP_SERVLETD3\baitap\JspServletD3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2595916271.index
+\baiTap\src

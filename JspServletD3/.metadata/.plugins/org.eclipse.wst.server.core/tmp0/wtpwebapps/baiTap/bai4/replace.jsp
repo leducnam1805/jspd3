@@ -1,0 +1,114 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0px;
+	text-align: center;
+}
+
+.container {
+	width: 500px;
+	margin: 5% auto;
+	border: 1px solid black;
+}
+
+.container-header {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #003399;
+}
+
+.container-header p {
+	color: #FFFF66;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+form {
+	background-color: #FFFFCC;
+	width: 100%;
+	margin: 0px;
+}
+
+form p {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.label-input {
+	
+}
+
+.submit-input {
+	margin: auto;
+	width: 50px;
+	padding: 10px;
+}
+</style>
+<title>Replace Char</title>
+</head>
+<body>
+	<%
+		String dV = (String) request.getAttribute("doanVan");
+	String tG = (String) request.getAttribute("tuGoc");
+	String tT = (String) request.getAttribute("thayThe");
+	String DVTT = (String) request.getAttribute("DVTT");
+	%>
+	<div class="container">
+		<div class="container-header">
+			<p>Thay Thế Chuỗi</p>
+		</div>
+		<form action="<%=request.getContextPath()%>/Bai4Controller"
+			method="post">
+			<p>Đoạn Văn Gốc:</p>
+			<textarea rows="2" cols="66" name="doanvan">
+			<%
+				if (dV != null) {
+				out.print(dV);
+			}
+			%>
+			</textarea>
+			<div class="label-input">
+				<label>
+					<p>
+						Từ Gốc :&nbsp;<input type="text" name="tugoc"
+							value="<%if (tG != null) {
+	out.print(tG);
+}%>" />
+					</p>
+				</label> <label>
+					<p>
+						Thay thế bằng :&nbsp;<input type="text" name="thaythe"
+							value="<%if (tT != null) {
+	out.print(tT);
+}%>" />
+					</p>
+				</label>
+			</div>
+			<textarea rows="2" cols="66">
+			<%
+				if (DVTT != null) {
+				out.print(DVTT);
+			}
+			%>
+			</textarea>
+			<hr>
+			<div class="submit-input">
+				<input type="submit" value="Thực Hiện" />
+			</div>
+
+		</form>
+		<p></p>
+	</div>
+</body>
+</html>
